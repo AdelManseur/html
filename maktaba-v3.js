@@ -116,6 +116,9 @@ var maktaba = (function () {
          case 'time':
             createdElement = document.createElement('time');
             break;
+         case 'wbr':
+            createdElement = document.createElement('wbr');
+            break;
           default:
             throw new Error(`Unsupported element type: ${name}`);
         }

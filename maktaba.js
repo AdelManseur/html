@@ -110,6 +110,9 @@ var maktaba = (function () {
          case 'blockquote':
             createdElement = document.createElement('blockquote');
             break;
+         case 'mark':
+            createdElement = document.createElement('mark');
+            break;
           default:
             throw new Error(`Unsupported element type: ${name}`);
         }

@@ -3,12 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/AdelManseur/framework-2021-01-42-11-43-/main/maktaba-v4.css">
     <script src="maktaba.js"></script>
     <title>Document</title>
+    <style>
+        body {
+            margin: 10px;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            border-radius: 10px;
+            border: none;
+            color: aliceblue;
+            width: 80px;
+            height: 40px;
+        }
+
+        @media (max-width: 190px) {
+            button {
+                width: 60%;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                border-radius: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <script>
-        maktaba.create("button");
-    </script>
+    <button class="red">Click Me!</button>
+    <button class="green">Click Me!</button>
+
 </body>
 </html>

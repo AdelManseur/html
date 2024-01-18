@@ -113,6 +113,9 @@ var maktaba = (function () {
          case 'mark':
             createdElement = document.createElement('mark');
             break;
+         case 'time':
+            createdElement = document.createElement('time');
+            break;
           default:
             throw new Error(`Unsupported element type: ${name}`);
         }
